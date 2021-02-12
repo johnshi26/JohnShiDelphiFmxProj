@@ -83,8 +83,9 @@ implementation
             end;
            end; // for
          Result:='';
-         for i:=0 to 35 do //begin   <---- This BEGIN need be commented or add a END statement BEFORE 'end; //subFunction'
+         for i:=0 to 35 do begin   //<---- This BEGIN need be commented or add a END statement BEFORE 'end; //subFunction'
              Result:=Result+arrStr1[i];
+             end;
          end; //subFunction
 
     Begin
